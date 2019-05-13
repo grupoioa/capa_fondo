@@ -12,8 +12,6 @@
    7. __world.topo.bathy.200412.3x21600x21600.C2.png__
    8. __world.topo.bathy.200412.3x21600x21600.D2.png__
 
--------------------------------
-
 ### Georeferenciar imagenes
 
    A cada imagen que descargamos hacemos la georefencia de coordenadas:  
@@ -27,7 +25,6 @@
    7. _**gdal_translate** -a_srs EPSG:4326 -a_ullr    0  0  90 90 world.topo.bathy.200412.3x21600x21600.C2.png C2.tif_
    8. _**gdal_translate** -a_srs EPSG:4326 -a_ullr   90  0 180 90 world.topo.bathy.200412.3x21600x21600.D2.png D2.tif_
 
-------------------------------
 ### Mezclar los archivos .tif en un solo archivo .tif
 
    _**gdal_merge.py** -o capa_fondo.tif A1.tif B1.tif C1.tif D1.tif A2.tif B2.tif C2.tif D2.tif_

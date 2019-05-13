@@ -39,8 +39,7 @@ Se tienen dos maneras para georeferenciar la imagen usando `gdal_translate`
    Lo que se hace es un mapeo de la posición del pixel a coordenadas _(x,y) -> (longitud,latitud)_
    Por ejemplo con una imagen de 5400 * 2400 :  
     
-   ``gdal_translate -gcp 0 0 -180 90 -gcp 5400 0 180 90 -gcp 0 2700 -180 -90 -gcp 5400 2700 180 -90 -a_srs EPSG:4326 imagen.png salida.tif``
-    
+   `gdal_translate -gcp 0 0 -180 90 -gcp 5400 0 180 90 -gcp 0 2700 -180 -90 -gcp 5400 2700 180 -90 -a_srs EPSG:4326 imagen.png salida.tif`
        * el pixel (0, 0)       sera en latitud/longitud el punto(-180, 90)
        * el pixel (5400, 0)    sera en latitud/longitud el punto(180, 90)
        * el pixel (0, 2700)    sera en latitud/longitud el punto(-180, -90)
@@ -76,14 +75,14 @@ Para generar la piramide de mosaicos lo haremos por medio de la utilidad __gdal_
 
    A cada imagen que descargamos hacemos la georefencia de coordenadas:  
    
-   1. `gdal_translate -a_srs EPSG:4326 -a_ullr -180 90 -90  0 world.topo.bathy.200412.3x21600x21600.A1.png A1.tif`
-   2. `gdal_translate -a_srs EPSG:4326 -a_ullr  -90 90   0  0 world.topo.bathy.200412.3x21600x21600.B1.png B1.tif`
-   3. `gdal_translate -a_srs EPSG:4326 -a_ullr    0 90  90  0 world.topo.bathy.200412.3x21600x21600.C1.png C1.tif`
-   4. `gdal_translate -a_srs EPSG:4326 -a_ullr   90 90 180  0 world.topo.bathy.200412.3x21600x21600.D1.png D1.tif`
-   5. `gdal_translate -a_srs EPSG:4326 -a_ullr -180  0 -90 90 world.topo.bathy.200412.3x21600x21600.A2.png A2.tif`
-   6. `gdal_translate -a_srs EPSG:4326 -a_ullr  -90  0   0 90 world.topo.bathy.200412.3x21600x21600.B2.png B2.tif`
-   7. `gdal_translate -a_srs EPSG:4326 -a_ullr    0  0  90 90 world.topo.bathy.200412.3x21600x21600.C2.png C2.tif`
-   8. `gdal_translate -a_srs EPSG:4326 -a_ullr   90  0 180 90 world.topo.bathy.200412.3x21600x21600.D2.png D2.tif`
+ ``1. gdal_translate -a_srs EPSG:4326 -a_ullr -180 90 -90  0 world.topo.bathy.200412.3x21600x21600.A1.png A1.tif  
+   2. gdal_translate -a_srs EPSG:4326 -a_ullr  -90 90   0  0 world.topo.bathy.200412.3x21600x21600.B1.png B1.tif  
+   3. gdal_translate -a_srs EPSG:4326 -a_ullr    0 90  90  0 world.topo.bathy.200412.3x21600x21600.C1.png C1.tif  
+   4. gdal_translate -a_srs EPSG:4326 -a_ullr   90 90 180  0 world.topo.bathy.200412.3x21600x21600.D1.png D1.tif  
+   5. gdal_translate -a_srs EPSG:4326 -a_ullr -180  0 -90 90 world.topo.bathy.200412.3x21600x21600.A2.png A2.tif  
+   6. gdal_translate -a_srs EPSG:4326 -a_ullr  -90  0   0 90 world.topo.bathy.200412.3x21600x21600.B2.png B2.tif  
+   7. gdal_translate -a_srs EPSG:4326 -a_ullr    0  0  90 90 world.topo.bathy.200412.3x21600x21600.C2.png C2.tif  
+   8. gdal_translate -a_srs EPSG:4326 -a_ullr   90  0 180 90 world.topo.bathy.200412.3x21600x21600.D2.png D2.tif``
 
 ### Mezclar los archivos .tif en un solo archivo .tif
 
@@ -112,7 +111,7 @@ Este proyecto está licenciado bajo la licencia MIT; consulte el archivo [LICENS
 
 ## Agradecimientos
 
-* Agradecemos a [Olmo Zavala][7]
+* Agradecemos a [Olmo Zavala][7] por todo su apoyo en este proyecto.
 
 [1]: https://visibleearth.nasa.gov/view.php?id=73909
 [2]: https://www.python.org/

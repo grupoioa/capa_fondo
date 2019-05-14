@@ -100,15 +100,14 @@ Para generar la piramide de mosaicos lo haremos por medio de la utilidad __gdal_
 
 ## Versionando
 
-Usamos [SemVer][4] para versionar. Para las versiones disponibles, consulte  
-[las etiquetas en este repositorio][5].
+Usamos [SemVer][4] para versionar. Para las versiones disponibles, consulte [las etiquetas en este repositorio][5].
 
 ## Autores
 * **Raúl Medina Peña** - [Github][6]
 
 ## Licencia
 
-Este proyecto está licenciado bajo la licencia MIT; consulte el archivo [LICENSE.md](LICENSE.md) para obtener detalles
+Este proyecto está licenciado bajo la licencia MIT; consulte el archivo [LICENSE.md](LICENSE.md) para obtener detalles.
 
 ## Agradecimientos
 
@@ -118,6 +117,6 @@ Este proyecto está licenciado bajo la licencia MIT; consulte el archivo [LICENS
 [2]: https://www.python.org/
 [3]: https://www.gdal.org/
 [4]: https://semver.org/lang/es/
-[5]: https://github.com/your/project/tags
+[5]: https://github.com/grupoioa/capa_fondo/tags
 [6]: https://github.com/rmedina09
 [7]: https://github.com/olmozavala

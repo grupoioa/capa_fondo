@@ -95,7 +95,7 @@ Para generar la piramide de mosaicos lo haremos por medio de la utilidad __gdal_
     capa_fondo.tif`
 
 ## Construido con
-* [Python][2] Lenguaje de progración
+* [Python][2] Lenguaje de programación
 * [GDAL][3] Librería usada.
 
 ## Versionando

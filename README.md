@@ -107,7 +107,7 @@ Usamos [SemVer][4] para versionar. Para las versiones disponibles, consulte [las
 
 ## Licencia
 
-Este proyecto está licenciado bajo la licencia MIT; consulte el archivo [LICENSE.md](LICENSE.md) para obtener detalles.
+Este proyecto está licenciado bajo la licencia MIT; consulte el archivo [LICENSE](LICENSE) para obtener detalles.
 
 ## Agradecimientos
 
